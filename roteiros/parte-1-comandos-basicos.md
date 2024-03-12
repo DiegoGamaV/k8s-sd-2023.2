@@ -1,6 +1,6 @@
 # Parte 1 - Uso Básico do Kubernetes
 
-Essa primeira parte foca em como utilizar o `kubectl` (a CLI do Kubernetes) para enxergar e contorlar os recursos do cluster. Alguns comandos serão mencionados no roteiro, bem como a criação de pods.
+Essa primeira parte foca em como utilizar o `kubectl` (a CLI do Kubernetes) para enxergar e contorlar os recursos do cluster. Alguns comandos serão mencionados no roteiro, bem como a criação de pods. Se você já estiver familiarizado com `kubectl` e como Deployments funcionam, pode pular essa parte e seguir direto para a [parte 2](./parte-2-aplicacao-web.md).
 
 ## Explicação Geral
 
@@ -447,4 +447,4 @@ deployment.apps "nginx" deleted
 
 Na Parte 1 nós vimos que o Kubernetes é declarativo e permite ver várias informações legais sobre os recursos e como estão organizados. Também é possível usar comandos imperativos utilizando `kubectl` e ter acesso a informações que evidenciem o comportamento declarativo da orquestração.
 
-Na [parte a seguit](./parte-2-aplicacao-web.md) exploraremos um exemplo prático com servidor web e banco de dados, onde subimos uma aplicação utilizando manifestos Kubernetes, ao invés de comandos imperativos do `kubectl`.
+Na [parte a seguir](./parte-2-aplicacao-web.md) exploraremos um exemplo prático com servidor web e banco de dados, onde subimos uma aplicação utilizando manifestos Kubernetes, ao invés de comandos imperativos do `kubectl`.

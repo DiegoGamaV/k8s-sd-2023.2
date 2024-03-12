@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+spec:
+  selector:
+    matchLabels:
+      app: webapp
+      tier: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: webapp
+        tier: backend
+    spec:
+      containers:
+        - name: webapp
+          image: adnanrahic/boilerplate-api:latest
+          ports:
+            - containerPort: 3000
